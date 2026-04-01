@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="flame_orange">#FF6D00</color>
+    <color name="goal_blue">#1565C0</color>
+    <color name="goal_green">#2E7D32</color>
+    <color name="goal_purple">#6A1B9A</color>
+    <color name="grid_active">#2EA043</color>
+    <color name="grid_inactive">#1B1F23</color>
     <color name="flame_red">#D84315</color>
     <color name="white">#FFFFFF</color>
 </resources>

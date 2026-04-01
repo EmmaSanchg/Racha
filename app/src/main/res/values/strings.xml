@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Racha</string>
+    <string name="app_title">Racha de Objetivos</string>
+    <string name="add_goal">Agregar objetivo</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="mark_today">Marcar hoy</string>
+    <string name="pause_goal">Pausar objetivo</string>
+    <string name="current_streak">Racha actual: %1$d días</string>
+    <string name="best_streak">Mejor racha: %1$d días</string>
     <string name="welcome_message">Proyecto Android nativo en Kotlin listo para abrir en Android Studio.</string>
     <string name="app_icon_description">Icono de flama</string>
 </resources>

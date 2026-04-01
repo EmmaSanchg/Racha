@@ -1,24 +1,34 @@
-# Racha (React Native + Expo)
+# Racha de Objetivos (Android nativo)
 
-Aplicación Android hecha con React Native y Expo para gestionar hábitos con rachas.
+Aplicación minimalista para seguimiento de rachas por objetivo.
 
-## Funcionalidades
+## Qué permite hacer
 
-- Crear hábitos con **nombre, color e icono**.
-- Marcar hábito completado por día.
-- Cálculo de **racha activa** y **mejor racha**.
-- Recordatorios diarios configurables por hábito (hora HH:MM) usando notificaciones locales.
-- Vista gráfica de cumplimiento de últimos 84 días estilo grilla tipo GitHub.
-- Vista resumida para widget (lista de hábitos + días en racha).
+- Definir objetivos.
+- Elegir icono (emoji) y color por objetivo.
+- Configurar recordatorio diario por objetivo (hora/minuto).
+- Marcar el avance del día para mantener la racha.
+- Pausar un objetivo (estado opaco con ícono de hielo).
+- Ver detalle del objetivo seleccionado: racha actual y mejor racha.
+- Visualizar actividad en una grilla tipo contribuciones (estilo GitHub).
+- Añadir widget de lista en pantalla de inicio con objetivo + días actuales.
+
+## Nombre
+
+- Nombre interno de la app: **Racha de Objetivos**.
+- Nombre mostrado en launcher/menú: **Racha**.
+
+## Requisitos
+
+- Android Studio
+- JDK 17
 
 ## Ejecutar
 
-```bash
-npm install
-npm run android
-```
+1. Abre el proyecto en Android Studio.
+2. Sincroniza Gradle.
+3. Ejecuta en dispositivo físico con depuración USB.
 
-## Nota sobre widget Android
+## Widget
 
-El widget nativo de Android no está disponible en **Expo Go** puro; para widget real se requiere **Expo Dev Build / prebuild** con módulos nativos.
-Esta entrega incluye la vista/estructura de datos para el widget dentro de la app para que el comportamiento de negocio esté listo.
+Mantén presionada la pantalla de inicio → Widgets → selecciona **Racha**.

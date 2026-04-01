@@ -8,4 +8,6 @@
     <string name="pause_goal">Pausar objetivo</string>
     <string name="current_streak">Racha actual: %1$d días</string>
     <string name="best_streak">Mejor racha: %1$d días</string>
+    <string name="welcome_message">Proyecto Android nativo en Kotlin listo para abrir en Android Studio.</string>
+    <string name="app_icon_description">Icono de flama</string>
 </resources>

@@ -1,24 +1,46 @@
-# Racha (React Native + Expo)
+# Racha (Android nativo con Kotlin)
 
-Aplicación Android hecha con React Native y Expo para gestionar hábitos con rachas.
+Proyecto Android nativo listo para abrir directamente con Android Studio.
 
-## Funcionalidades
+## Requisitos
 
-- Crear hábitos con **nombre, color e icono**.
-- Marcar hábito completado por día.
-- Cálculo de **racha activa** y **mejor racha**.
-- Recordatorios diarios configurables por hábito (hora HH:MM) usando notificaciones locales.
-- Vista gráfica de cumplimiento de últimos 84 días estilo grilla tipo GitHub.
-- Vista resumida para widget (lista de hábitos + días en racha).
+- Android Studio (Hedgehog o superior recomendado)
+- JDK 17
+- SDK Android instalado desde Android Studio
+- Gradle local (solo para bootstrap inicial del wrapper en este repo)
 
-## Ejecutar
+## Importante sobre archivos binarios en este repo
+
+Este repositorio **no versiona binarios** (por política de PR), por eso no incluye `gradle-wrapper.jar`.
+
+Antes de compilar por terminal, ejecuta una sola vez:
 
 ```bash
-npm install
-npm run android
+./scripts_bootstrap_wrapper.sh
 ```
 
-## Nota sobre widget Android
+Esto genera `gradle/wrapper/gradle-wrapper.jar` localmente.
 
-El widget nativo de Android no está disponible en **Expo Go** puro; para widget real se requiere **Expo Dev Build / prebuild** con módulos nativos.
-Esta entrega incluye la vista/estructura de datos para el widget dentro de la app para que el comportamiento de negocio esté listo.
+## Cómo abrir y correr en tu Android físico
+
+1. Clona el repositorio.
+2. Abre Android Studio y selecciona **Open** sobre esta carpeta (`Racha`).
+3. Si Android Studio te pide regenerar wrapper, acepta.
+4. Si prefieres terminal, corre `./scripts_bootstrap_wrapper.sh`.
+5. Conecta tu teléfono con **Depuración USB** habilitada.
+6. Pulsa **Run** ▶ y selecciona tu dispositivo.
+
+## Ejecutar por terminal
+
+```bash
+./scripts_bootstrap_wrapper.sh
+./gradlew assembleDebug
+```
+
+APK generado en:
+
+`app/build/outputs/apk/debug/app-debug.apk`
+
+## Icono
+
+La app usa un icono adaptativo con una **flama** (`ic_launcher_foreground.xml`).

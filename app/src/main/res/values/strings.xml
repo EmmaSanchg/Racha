@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Racha</string>
+    <string name="welcome_message">Proyecto Android nativo en Kotlin listo para abrir en Android Studio.</string>
+    <string name="app_icon_description">Icono de flama</string>
+</resources>
